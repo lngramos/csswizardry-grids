@@ -121,10 +121,8 @@ $use-markup-fix:        true!default;
  * that the breakpoint fires at.
  */
 $breakpoints: (
-    'palm' '(max-width: 480px)',
-    'lap' '(min-width: 481px) and (max-width: 1023px)',
-    'portable' '(max-width: 1023px)',
-    'desk' '(min-width: 1024px)'
+    'medium-and-up' '(min-width: 640px)',
+    'wide-and-up'   '(min-width: 1024px)'
 )!default;
 
 
@@ -138,9 +136,9 @@ $breakpoints: (
  * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
  * have been set to ‘true’.
  */
-$breakpoint-has-widths: ('palm', 'lap', 'portable', 'desk')!default;
-$breakpoint-has-push:   ('palm', 'lap', 'portable', 'desk')!default;
-$breakpoint-has-pull:   ('palm', 'lap', 'portable', 'desk')!default;
+$breakpoint-has-widths: ('medium-and-up', 'wide-and-up')!default;
+$breakpoint-has-push:   ('medium-and-up', 'wide-and-up')!default;
+$breakpoint-has-pull:   ('medium-and-up', 'wide-and-up')!default;
 
 
 /**
